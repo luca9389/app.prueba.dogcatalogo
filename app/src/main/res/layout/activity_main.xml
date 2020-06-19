@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/viewRoot"
+    android:background="@drawable/c1942acd2896ee1e374ce4ca0d32ae75"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="app.prueba.dogcatalogo.MainActivity">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchBreed"
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="7dp"

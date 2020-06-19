@@ -2,13 +2,16 @@
 
 package app.prueba.dogcatalogo
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.retrofitexampleapp.R
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.patalla_login.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -31,15 +34,17 @@ class MainActivity : AppCompatActivity(),
 
     lateinit var imagesPuppies: List<String>
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Le decimos que somos los escuchadores
+
         searchBreed.setOnQueryTextListener(this)
 
 
     }
+
+
 
     //Creamos la funcion que nos devuelve un objeto Retrofit
     private fun getRetrofit(): Retrofit {
